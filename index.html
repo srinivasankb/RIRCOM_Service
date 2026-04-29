@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIRCOM Festival Guide</title>
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3b82f6">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <header>
+        <div class="header-top-actions">
+            <button id="qrShareBtn" class="icon-btn" aria-label="Share QR Code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                    <path d="M7 7h.01M17 7h.01M7 17h.01"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="header-content">
+            <div class="logo-text">RIRCOM</div>
+            <div class="freq-pill">FREQ: 145.450 MHz (Simplex)</div>
+            <h1>மாரியம்மன் கோவில் திருவிழா <span> - 2026</span></h1>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search callsign/name...">
+    </div>
+
+    <main>
+        <div class="ham-grid" id="hamGrid"></div>
+    </main>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <div class="group-link-area">
+        <a href="https://chat.whatsapp.com/JY9ff3csXltISOcmUUTXsZ" target="_blank" class="btn-group">WhatsApp Group</a>
+    </div>
+
+    <div id="qrModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeQr">&times;</span>
+            <div class="modal-title">Share App</div>
+            <div id="qrContainer" class="qr-box"></div>
+            <p class="modal-hint">Scan this to get the guide instantly</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 RIRCOM</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

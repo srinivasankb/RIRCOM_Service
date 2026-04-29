@@ -1,0 +1,21 @@
+{
+  "name": "RIRCOM Festival Guide",
+  "short_name": "RIRCOM",
+  "description": "Communication service guide for RIRCOM ham operators.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#07090e",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
